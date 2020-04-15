@@ -13,7 +13,7 @@ def test_MultiDimensionalArray():
         A = MDA(int, size, size, size, size)
         A.fill(randint(-20000, 20000))
         while i >= 0:
-            A[randint(0,19)][randint(0,19)][randint(0,19)][randint(0,19)] = randint(-20000, 20000)
+            A[randint(0,size-1)][randint(0,size-1)][randint(0,size-1)][randint(0,size-1)] = randint(-20000, 20000)
             i -= 1
         j -= 1
 
