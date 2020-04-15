@@ -6,10 +6,10 @@ import cProfile
 
 def test_MultiDimensionalArray():
     MDA = MultiDimensionalArray
-    i = 200
-    j = 5
+    i = 200 #iteraciones __setitem__
+    j = 5 #iteraciones generales
+    size = 20 #tamaño de las dimensiones
     while j >= 0:
-        size = 20
         A = MDA(int, size, size, size, size)
         A.fill(randint(-20000, 20000))
         while i >= 0:
