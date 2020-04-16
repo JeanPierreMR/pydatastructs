@@ -34,12 +34,3 @@ class SparseTable():
 
         return min(minimumel)
 
-if __name__ == '__main__':
-    array = [5, 7, 4, 3, 8, 9]
-
-    sparsetable = SparseTable(array)
-    qlist = [[3, 5], [1, 6], [0, 2]]
-    for x in qlist:
-        print(sparsetable.query(array, x))
-    
-
