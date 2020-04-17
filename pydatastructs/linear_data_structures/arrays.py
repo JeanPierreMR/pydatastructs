@@ -2,7 +2,8 @@ from pydatastructs.utils.misc_util import _check_type, NoneType
 
 __all__ = [
 'OneDimensionalArray',
-'DynamicOneDimensionalArray'
+'DynamicOneDimensionalArray',
+'MultiDimensionalArray'
 ]
 
 class Array(object):
