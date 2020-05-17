@@ -8,7 +8,7 @@ rw = RandomWords()
 sizes = [10, 10000]
 word_lengths = [20, 40]
 n_iterations = 100
-n_rounds = 500
+n_rounds = 1000
 
 
 def random_word(length=20):

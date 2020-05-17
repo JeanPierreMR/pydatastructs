@@ -19,7 +19,6 @@ def random_words(chars, size):
 
 def test_trie(size):
     trie = Trie()
-    iterations = size
     sleep(3)
     for x in range(int(size/2)):
         trie.insert(random_word(20))
@@ -33,8 +32,6 @@ def test_trie(size):
     for x in range(int(size/10)):
         trie.delete(random_word(20))
     sleep(2)
-    a = 1+1
-    sleep(1)
 
 
 
