@@ -50,6 +50,7 @@ import math
 from math import log2 
 
 '''
+Issue #25
 Notes about sparse table
 The idea is to precompute minimum of all subarrays of size 2j where j varies from 0 to Log n.
 Importing log2 utilized for constructing a sparse table
