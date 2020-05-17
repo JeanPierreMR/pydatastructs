@@ -1,7 +1,13 @@
 import math 
-from math import log2 #importing log2 utilized for constructing a sparse table
-#sparse table: precompute minimum of all subarrays of size 2j where j varies from 0 to Log n.
-#Parts of sparse table: construction, query and range minimum query
+from math import log2 
+
+'''
+Notes about sparse table
+The idea is to precompute minimum of all subarrays of size 2j where j varies from 0 to Log n.
+Importing log2 utilized for constructing a sparse table
+Sparse table: precompute minimum of all subarrays of size 2j where j varies from 0 to Log n.
+Parts of sparse table: construction, query and range minimum query
+'''
 
 Max = 500
 
@@ -70,5 +76,3 @@ if __name__ == "__main__":
 	y = len(q) 
 
 	rmq(a, x, q, y) 
-    
-
