@@ -11,10 +11,6 @@ def test_trie():
     trie.insert("sea")
     trie.insert("see")
     trie.insert("seek")
-    print(trie.search("see"))
-    print(trie.search("see"))
-    print(trie.search("sew"))
-    print(trie.search("se"))
     assert trie.search("Bonjour") == False
     assert trie.search("see")
     assert trie.search("sew").sort() == ["search", "sea", "see", "seek"].sort()
