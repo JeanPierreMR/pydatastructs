@@ -76,3 +76,12 @@ if __name__ == "__main__":
 	y = len(q) 
 
 	rmq(a, x, q, y) 
+
+
+
+
+
+
+
+
+    #fuente: https://www.geeksforgeeks.org/range-minimum-query-for-static-array/
