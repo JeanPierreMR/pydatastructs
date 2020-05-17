@@ -1,3 +1,55 @@
+'''
+API
+
+Query:
+The class Query's purpose is to represent a query range.
+
+Attributes:
+a and b - ranges minimum for comparison 
+
+Methods:
+
+sparsetableconstruction(list,int): fills table 
+query(list, int, int):
+rmq(list, int, list, int):
+'''
+'''
+        Represents a trie data structure.
+
+        Parameters
+        ==========
+        dtype: type
+            A valid object type.
+        N: number of keys in trie
+        K: world inserting or searching 
+        alphabet_size: size of alphabet *26
+
+        Raises
+        ======
+        IndexError: 
+            list index out of range
+        TypeError: 
+            object of type 'int' has no len()
+
+        Examples
+        ========
+        >>> from pydatastructs import trie_structure as 
+        >>> key = ["hi","bye"]
+        >>> output = ["Not present in trie", 
+              "Present in trie"] 
+        >>> new = Trie()
+        >>> for key in keys: 
+               new.insert(key)
+        >>> output[new.search("bye")]
+        "Present in trie"
+        >>> output[new.search("the")]
+        "Not present in trie"
+
+        References
+        ==========
+        .. [1] https://www.geeksforgeeks.org/range-minimum-query-for-static-array/
+        .. [2] https://www.youtube.com/watch?v=c5O7E_PDO4U
+        '''
 import math 
 from math import log2 
 
@@ -68,7 +120,7 @@ def rmq(arr: list, x: int, q: list, y: int):
  
 		print("The minimum of [%d, %d] is %d" %(A, B, query(arr, A, B))) 
 
-# Driver Code 
+
 if __name__ == "__main__": 
 	a = [4, 6, 1, 5, 7, 3] 
 	x = len(a) 
