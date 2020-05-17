@@ -9,41 +9,37 @@ a and b - ranges minimum for comparison
 
 Methods:
 
-sparsetableconstruction(list,int): fills table 
-query(list, int, int):
-rmq(list, int, list, int):
+sparsetableconstruction(list,int): fills table array table[][] in bottom up manner.
+query(list, int, int): returns minimum of array[].
+rmq(list, int, list, int): prints the minimum of m query ranges in arr[0...n-1].
 '''
 '''
-        Represents a trie data structure.
+        Represents a sparse table structure.
 
         Parameters
         ==========
         dtype: type
             A valid object type.
-        N: number of keys in trie
-        K: world inserting or searching 
-        alphabet_size: size of alphabet *26
+        a,b: range minimum for comparison
+        q: list(query)
+        x,y: len
 
         Raises
         ======
-        IndexError: 
-            list index out of range
+        
+        NameError: 
+            name 'b' is not defined
         TypeError: 
-            object of type 'int' has no len()
+            object of type 'char' has no len()
 
         Examples
         ========
-        >>> from pydatastructs import trie_structure as 
-        >>> key = ["hi","bye"]
-        >>> output = ["Not present in trie", 
-              "Present in trie"] 
-        >>> new = Trie()
-        >>> for key in keys: 
-               new.insert(key)
-        >>> output[new.search("bye")]
-        "Present in trie"
-        >>> output[new.search("the")]
-        "Not present in trie"
+        >>> from pydatastructs import Sparse_Table as 
+        >>> a = [0, 1, 2, 3, 4, 5]
+        >>> x = len(a)
+        >>> q = [Query(0, 1), Query(1, 3), Query(3, 5)]
+        >>> y = len(q)
+        >>> rmq(a,x,q,y)
 
         References
         ==========
@@ -128,12 +124,3 @@ if __name__ == "__main__":
 	y = len(q) 
 
 	rmq(a, x, q, y) 
-
-
-
-
-
-
-
-
-    #fuente: https://www.geeksforgeeks.org/range-minimum-query-for-static-array/
