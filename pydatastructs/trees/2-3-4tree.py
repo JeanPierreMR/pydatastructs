@@ -87,7 +87,7 @@ class Node:
 
 
     
-class Tree:
+class Tree2_4:
     def __init__(self):
         self.root = None
         
@@ -115,5 +115,5 @@ class Tree:
                     nextlevel.append(children)
                 thislevel = nextlevel
 
-tree = Tree()
+
 
