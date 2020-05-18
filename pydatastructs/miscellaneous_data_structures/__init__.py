@@ -27,3 +27,8 @@ from .disjoint_set import (
     DisjointSetForest,
 )
 __all__.extend(disjoint_set.__all__)
+
+from .sparse_table import (
+    SparseTable
+)
+__all__.extend(sparse_table.__all__)
