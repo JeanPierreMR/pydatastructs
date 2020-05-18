@@ -39,7 +39,7 @@ def do_task():
     except:
         print("trie no existe")
     try:
-        print(tree.find(4) == 4)
+        print(tree.find(7) == 7)
         print("tree existe")
     except:
         print("tree no existe")
@@ -66,7 +66,7 @@ del st
 do_task()
 
 state_MDA = load_object('marr.pkl')
-MultiDimensionalArray(state_MDA['dtype'], state_MDA['sizes'], state_MDA['data'])
+multi_array = MultiDimensionalArray(state_MDA['dtype'], state_MDA['sizes'], state_MDA['data'])
 trie = load_object('trie.pkl')
 tree = load_object('tree24.pkl')
 st = load_object('st.pkl')
