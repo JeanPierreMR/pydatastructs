@@ -80,11 +80,7 @@ class Node:
             for i in range(lengthdata):
                 if key < self.data[i]:
                     return self.children[i].findNode(key)
-   
-    def remove(self, item):
-        pass
-    
-    #Tranversal 1
+
     def preorderTranversal(self):
         for children in self.children:
             children.preorderTranversal()
@@ -104,14 +100,10 @@ class Tree:
             while self.root.parent:
                 self.root = self.root.parent
         return True
-    
+
     def find(self, item):
         return self.root.findNode(item)
-        
-    def remove(self, item):
-        self.root.remove(item)
-        
-    #Traversal 2
+
     def traverse(self):
         thislevel = [self.root]
         while thislevel:
@@ -122,7 +114,6 @@ class Tree:
                 for children in n.children:
                     nextlevel.append(children)
                 thislevel = nextlevel
-
 
 tree = Tree()
 
