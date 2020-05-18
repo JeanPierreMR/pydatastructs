@@ -41,8 +41,6 @@ class Node:
 
     
     def splitNode(self):
-        print("Node split: " + str(self.data))
-
         l_children = Node(self.data[0], self)
         r_children = Node(self.data[2], self)
         r_children.data.append(self.data[3])
@@ -73,7 +71,7 @@ class Node:
         elif self.leaf():
             return False
 
-        elif key > self.data[-1][0][0]:
+        elif key > self.data[-1]:
             return self.children[-1].findNode(key)
 
         else:
@@ -92,7 +90,6 @@ class Tree2_4:
         self.root = None
         
     def insert(self, key):
-        print("Inserting: " + str(key))
         if self.root is None:
             self.root = Node(key)
         else:
@@ -117,3 +114,8 @@ class Tree2_4:
 
 
 
+#Example shown below:
+#lst = [3, 1, 5, 4, 2, 9, 10, 8, 7, 6]
+#for item in lst:
+#    tree.insert(item)
+#tree.traverse()
