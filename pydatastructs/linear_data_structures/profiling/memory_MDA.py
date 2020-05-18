@@ -35,7 +35,7 @@ def test_trie(size):
         for y in range(size):
             array[x, y] = random_word()
     sleep(3)
-    array.fill("Iustitia")
+    array.fill("Veritas")
     sleep(3)
     # 3 dimensions String
     array = MultiDimensionalArray(str, size, size, 20)
@@ -45,7 +45,7 @@ def test_trie(size):
             for z in range(19):
                 array[x, y, z] = random_word()
     sleep(3)
-    array.fill("Iustitia")
+    array.fill("Libertas")
     sleep(3)
 
 
