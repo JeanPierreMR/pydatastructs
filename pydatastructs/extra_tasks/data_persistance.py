@@ -13,7 +13,7 @@ def creation():
     multi_array.fill(6)
 
     st = SparseTable([0, 1, 2, 3, 4, 5])
-    return multi_array, trie, tree, st
+    return multi_array, st
 
 
 def do_task():
@@ -28,7 +28,7 @@ def do_task():
     except:
         print("st no existe")
 
-multi_array, trie, tree, st = creation()
+multi_array, st = creation()
 
 #Saving objects
 save_object(multi_array.get_state(), 'marr.pkl')
