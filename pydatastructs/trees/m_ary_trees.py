@@ -330,8 +330,6 @@ class Node2_4:
                     break
 
     def splitNode(self):
-        print("Node split: " + str(self.data))
-
         l_children = Node2_4(self.data[0], self)
         r_children = Node2_4(self.data[2], self)
         r_children.data.append(self.data[3])
@@ -379,7 +377,6 @@ class Tree2_4:
         self.root = None
 
     def insert(self, key):
-        print("Inserting: " + str(key))
         if self.root is None:
             self.root = Node2_4(key)
         else:

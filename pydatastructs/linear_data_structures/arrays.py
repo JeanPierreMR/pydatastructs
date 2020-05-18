@@ -190,7 +190,13 @@ class MultiDimensionalArray(Array):
             obj._sizes = (args[0], 1)
             obj._data = [None] * args[0]
             return obj
-
+        if len(args) == 2:
+            if isinstance(args[0], tuple) and isinstance(args[1], list):
+                obj = Array.__new__(cls)
+                obj._dtype = dtype
+                obj._sizes = args[0]
+                obj._data = args[1]
+                return obj
         dimensions = args
         for dimension in dimensions:
             if dimension < 1:
@@ -213,6 +219,13 @@ class MultiDimensionalArray(Array):
         obj._sizes = tuple(d_sizes)
         obj._data = [None] * obj._sizes[1] * dimensions[0]
         return obj
+
+
+    def get_state(self):
+        dtype = self._dtype
+        sizes = self._sizes
+        data = self._data
+        return {'dtype': dtype, 'sizes': sizes, 'data': data}
 
     @classmethod
     def methods(cls) -> list:
