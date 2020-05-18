@@ -1,10 +1,8 @@
 import pytest
 from pydatastructs import Trie
 from random import randint, choice
-from random_words import RandomWords
 import string
 trie = Trie()
-rw = RandomWords()
 sizes = [10, 10000]
 word_lengths = [20, 40]
 n_iterations = 100
