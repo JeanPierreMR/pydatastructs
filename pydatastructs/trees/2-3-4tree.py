@@ -117,8 +117,3 @@ class Tree:
 
 tree = Tree()
 
-#Example shown below:
-#lst = [3, 1, 5, 4, 2, 9, 10, 8, 7, 6]
-#for item in lst:
-#    tree.insert(item)
-#tree.traverse()
